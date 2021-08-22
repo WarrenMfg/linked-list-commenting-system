@@ -1,0 +1,142 @@
+* {
+  font-family: Arial, sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 1rem;
+  background-color: whitesmoke;
+  color: darkslategray;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+form {
+  height: 50px;
+}
+
+form#new-comment {
+  margin-bottom: 1rem;
+}
+
+form#new-reply {
+  margin-top: 1rem;
+  max-width: initial;
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: center;
+  max-width: 75%;
+}
+
+input {
+  flex-grow: 1;
+  font-size: 1rem;
+  padding: 0.75rem;
+  margin: 0 0.5rem 0 0;
+  border-radius: 0;
+  border: 1px solid darkslategray;
+}
+
+button {
+  width: 80px;
+  border-radius: 0;
+  border: 1px solid darkslategray;
+  background-color: white;
+  color: darkslategray;
+  padding: 0.5rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+button[type='button'] {
+  border-left: none;
+}
+
+button:hover {
+  background-color: slategray;
+  color: white;
+}
+
+.comments-container {
+  display: block;
+  background-color: slategray;
+  padding: 1rem;
+}
+
+.hidden {
+  display: none;
+}
+
+.comment-and-replies-container {
+  background-color: white;
+  padding: 1rem;
+  margin: 0 0 1rem;
+  box-shadow: 0 0 5px black;
+}
+
+.comment {
+  display: flex;
+  justify-content: space-between;
+}
+
+.comment span {
+  align-self: center;
+  margin-right: 1rem;
+  line-height: 1.5rem;
+}
+
+.comment-and-replies-container:last-of-type {
+  margin-bottom: 0;
+}
+
+.reply-button-container {
+  display: flex;
+}
+
+.reply-button {
+  margin-top: auto;
+  height: 50px;
+}
+
+.reply-sort {
+  border-left: none;
+}
+
+.reply {
+  background-color: whitesmoke;
+  padding: 1rem;
+  margin-top: 1rem;
+}
+
+#data-structure-container {
+  overflow-x: hidden;
+}
+
+#data-structure-container h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  margin: 0 0 1rem;
+}
+
+#data-structure {
+  background-color: white;
+  box-shadow: 0 0 10px inset lightgray;
+}
+
+pre {
+  padding: 1rem;
+  font-family: monospace;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  overflow-x: scroll;
+}
